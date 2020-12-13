@@ -15,6 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
+	new_name = str(name) + "Welcome 2 The Future"
 	return render_template('index.html', name=name)
 
 
